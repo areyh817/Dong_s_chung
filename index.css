@@ -1,0 +1,110 @@
+body, html { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* background 이미지 */
+#bgimg {
+    border: 0;
+    padding: 0;
+    background-image: url('https://www.e-mirim.hs.kr/upload/board/1617604864054.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+button:hover{
+    cursor: pointer;
+}
+::selection {
+    background: #00913a;
+    color: #fff;
+ }
+
+/* 메인 텍스트 */
+.main_box {
+	width: 100%; 
+    height: 100%;
+	margin: 0px auto;
+	position: absolute;
+	top:0; 
+    right: 0;
+    
+}
+
+.main_box h3{
+    font-family: 'NanumSquare', sans-serif !important;
+    font-size: 68px;
+    color: #000;
+    margin-top: 300px;
+    margin-left: 1000px;
+    margin-bottom: 35px;
+    font-weight: 750;
+}
+
+.main_box p{
+    font-family: 'NanumSquare', sans-serif !important;
+    font-size: 22px;
+    color: #000;
+    float: left;
+    margin-top: -10px;
+    margin-left: 1000px;
+}
+
+.main_box button{
+    border:0;
+    outline: 0;
+    border-radius: 50px;
+    width: 250px;
+    height: 60px;
+    background-color: #00913a;
+    font-family: 'NanumSquare', sans-serif !important;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 1000px;
+    color: #fff;
+}
+
+.main_box button:hover{
+     background-color: white;
+     color: #00913a;
+}
+
+/* ul */
+.menu {
+    font-family: 'NanumSquare', sans-serif !important;
+	width: 100%;
+	height: 15%;
+	margin: 0px auto;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.menu h3 { 
+	font-size: 19px; 
+	color: #000; 
+	font-family: 'Noto Sans KR', sans-serif; 
+	font-weight: 500;
+	float: left;
+	margin-left: 2%;
+	margin-top: 3%;
+}
+
+.menu #mypage {
+	margin-left: 5%;
+}
+
+.menu img {
+	margin-left: 4.5%;
+	margin-top: 3%;
+	float: left;
+	width: 5%;
+	height: auto;
+}
+
+#mypage:hover{ color:#00913a; }
+#lookup:hover{ color:#00913a; }
+#create:hover{ color:#00913a; }
+#recommand:hover{ color:#00913a; }
