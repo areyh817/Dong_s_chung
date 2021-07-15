@@ -14,10 +14,11 @@
         body{
             border: 0;
             padding: 0;
-            background-image: url('https://www.e-mirim.hs.kr/upload/board/1617604864054.jpg');
+            background-color: rgb(228, 228, 228);
+            /*background-image: url('https://www.e-mirim.hs.kr/upload/board/1617604864054.jpg');
             min-height: 100%;
             background-position: center;
-            background-size: cover;
+            background-size: cover;*/
         }
     </style>
     
@@ -25,12 +26,12 @@
 <body style="overflow: hidden;">
 
     <!--로그인창-->
-    <center><form method="POST">
+    <center><form method="POST" action="TEST_PHP/loginTest.php">
         <table>
             <tr>
                 <tr>
                     <td>
-                        <span class = "login_txt">LOGIN</span><br>
+                        <a href="#" style="text-decoration: none; color: #000;"><span class = "login_txt">LOGIN</span></a><br>
                     </td>
                 </tr>
                 <tr>
@@ -40,8 +41,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" placeholder="email"><br>
-                        <input type="password" placeholder="password">
+                        <input type="text" placeholder="email" name = "email"><br>
+                        <input type="password" placeholder="password" name = "pass">
                     </td>
                 </tr>
                 <tr>
