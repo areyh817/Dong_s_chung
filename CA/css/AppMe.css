@@ -5,6 +5,12 @@ body, html {
 }
 /* 동아리 대표 이미지 */
 .ca_img{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+div h5{
+    
 }
