@@ -12,7 +12,7 @@
 .menu h3 { 
 	font-size: 19px; 
 	color: #000; 
-	font-family: 'Noto Sans KR', sans-serif; 
+    font-family: 'NanumSquare', sans-serif !important;
 	font-weight: 500;
 	float: left;
 	margin-left: 2%;
@@ -37,18 +37,6 @@
     margin-left: 50px;
 }
 .line_2{
-    float: left;
-    margin-left: 50px;
-}
-.line_3{
-    float: left;
-    margin-left: 50px;
-}
-.line_4{
-    float: left;
-    margin-left: 50px;
-}
-.line_5{
     float: left;
 	margin-top: 50px;
     margin-left: 50px;
