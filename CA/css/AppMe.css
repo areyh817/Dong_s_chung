@@ -1,0 +1,10 @@
+body, html { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* 동아리 대표 이미지 */
+.ca_img{
+    width: 250px;
+    height: 250px;
+}
