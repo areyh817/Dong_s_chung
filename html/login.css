@@ -37,16 +37,16 @@ input[type = "password"]{
     padding-left: 20px;
 }
 input:hover{
-    background-color: #cff5c3;
+    background-color: #ffec8e;
 }
 button{
     font-family: 'NanumSquare', sans-serif !important;
-    font-size: 16px;
-    width: 200px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 150px;
     height: 45px;
     border:0;
     outline: 0;
-    color:white;
     cursor: pointer;
     border-radius: 40px;
 }
@@ -60,12 +60,12 @@ button{
 .login_txt{
     font-family: 'NanumSquare', sans-serif !important;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
     margin-left: 300px;
 }
 .login_txt02{
     font-family: 'NanumSquare', sans-serif !important;
     font-size: 14px;
-    margin-top: -10px;
-    margin-left: 225px;
+    font-weight: 500;
+    margin-left: 230px;
 }
