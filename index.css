@@ -18,7 +18,7 @@ button:hover{
     cursor: pointer;
 }
 ::selection {
-    background: #00913a;
+    background: #ffd400;
     color: #fff;
  }
 
@@ -58,17 +58,19 @@ button:hover{
     border-radius: 50px;
     width: 250px;
     height: 60px;
-    background-color: #00913a;
+    background-color:#f5da56;
     font-family: 'NanumSquare', sans-serif !important;
     font-size: 18px;
+    font-weight: bold;
     margin-top: 20px;
     margin-left: 1000px;
-    color: #fff;
+    color: #000;
 }
 
 .main_box button:hover{
-     background-color: white;
-     color: #00913a;
+    background-color: rgb(233, 233, 233);
+    color: #000;
+    font-weight: 800;
 }
 
 /* ul */
@@ -104,7 +106,7 @@ button:hover{
 	height: auto;
 }
 
-#mypage:hover{ color:#00913a; }
-#lookup:hover{ color:#00913a; }
-#create:hover{ color:#00913a; }
-#recommand:hover{ color:#00913a; }
+#mypage:hover{ font-weight: 800; }
+#lookup:hover{ font-weight: 800; }
+#create:hover{ font-weight: 800; }
+#recommand:hover{ font-weight: 800; }

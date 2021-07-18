@@ -50,4 +50,7 @@ a{
 .w3-container{ border-radius: 20px; cursor: pointer; }
 .line img{ border-radius: 20px; }
 .w3-card-4{ border-radius: 20px; }
-
+#mypage:hover{ font-weight: 800; }
+#lookup:hover{ font-weight: 800; }
+#create:hover{ font-weight: 800; }
+#recommand:hover{ font-weight: 800; }
