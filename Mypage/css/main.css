@@ -31,3 +31,70 @@
 	width: 5%;
 	height: auto;
 }
+
+/* 프로필 메인 */
+.profile_img{
+	margin-top: 7px;
+	margin-left: 100px;
+	width: 50px;
+	float: left;
+}
+.mypage_title{
+	font-family: 'NanumSquare', sans-serif !important;
+}
+
+hr{
+    height: 1px;
+    width: 1320px;
+    margin: 0 auto;
+    margin-top:30px;
+    border:0;
+    background:rgb(143, 143, 143);
+}
+/* 회원정보 */
+.info_title{
+	font-family: 'NanumSquare', sans-serif !important;
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+.member_info{
+	font-family: 'NanumSquare', sans-serif !important;
+	margin-left: 100px;
+
+}
+input{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	height: 30px;
+}
+.edit_info{
+	font-family: 'NanumSquare', sans-serif !important;
+	width: 165px;
+	font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #fadf57;
+    color: #000;
+}
+.del_info{
+	font-family: 'NanumSquare', sans-serif !important;
+	width: 165px;
+	font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #f54e1b;
+    color: #000;
+	
+}
+button:hover{
+    background-color: rgb(233, 233, 233);
+    color: #000;
+    font-weight: 800;
+}
+.btn_info{
+	margin-top: 30px;
+}
