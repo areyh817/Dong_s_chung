@@ -99,3 +99,13 @@ button:hover{
 .btn_info{
 	margin-top: 30px;
 }
+
+.part1{
+	float: left;
+}
+.height{
+	border:0;
+	margin-left: 330px;
+	width: 1px;
+	height: 500px;
+}
