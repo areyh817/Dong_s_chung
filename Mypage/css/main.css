@@ -10,6 +10,9 @@
 	left:0;
 }
 
+button{
+	cursor: pointer;
+}
 .menu h3 { 
 	font-size: 19px; 
 	color: #000; 
@@ -34,8 +37,8 @@
 
 /* 프로필 메인 */
 .profile_img{
-	margin-top: 7px;
-	margin-left: 100px;
+	margin-top: 15px;
+	margin-left: 110px;
 	width: 50px;
 	float: left;
 }
@@ -61,6 +64,7 @@ hr{
 .member_info{
 	font-family: 'NanumSquare', sans-serif !important;
 	margin-left: 100px;
+	padding-top: 15px;
 
 }
 input{
@@ -68,12 +72,17 @@ input{
 	margin-bottom: 20px;
 	height: 30px;
 }
+/*input[type="text"]{
+	height: 32px;
+	border-radius: 11px;
+	border:1px solid #000;
+}*/
 .edit_info{
 	font-family: 'NanumSquare', sans-serif !important;
 	width: 165px;
-	font-size: 18px;
+	font-size: 15px;
     font-weight: bold;
-    height: 40px;
+    height: 42px;
     border: 0;
     border-radius: 20px;
     background-color: #fadf57;
@@ -82,12 +91,12 @@ input{
 .del_info{
 	font-family: 'NanumSquare', sans-serif !important;
 	width: 165px;
-	font-size: 18px;
+	font-size: 15px;
     font-weight: bold;
-    height: 40px;
+    height: 42px;
     border: 0;
     border-radius: 20px;
-    background-color: #f54e1b;
+    background-color: #e47554;
     color: #000;
 	
 }
