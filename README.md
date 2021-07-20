@@ -4,6 +4,9 @@
 ## 화면
 #### :green_heart: 메인화면 :green_heart:
 ![메인화면](img/프로토타입01.png)
+![CPU 소개 페이지](img/prototype03.png)
+![앱앤미 소개 페이지](img/prototype02.png)
+![추가 소개](img/prototype04.png)
 
 
 ### 호스팅 주소
