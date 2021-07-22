@@ -72,11 +72,22 @@ input{
 	margin-bottom: 20px;
 	height: 30px;
 }
-/*input[type="text"]{
+input[type="text"]{
+	font-family: 'NanumSquare', sans-serif !important;
+	width: 150px;
 	height: 32px;
+	padding-left: 10px;
 	border-radius: 11px;
 	border:1px solid #000;
-}*/
+}
+input[type="email"]{
+	font-family: 'NanumSquare', sans-serif !important;
+	width: 150px;
+	height: 32px;
+	padding-left: 10px;
+	border-radius: 11px;
+	border:1px solid #000;
+}
 .edit_info{
 	font-family: 'NanumSquare', sans-serif !important;
 	width: 165px;
