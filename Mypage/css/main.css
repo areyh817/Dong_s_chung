@@ -58,6 +58,7 @@ hr{
 /* 회원정보 */
 .info_title{
 	font-family: 'NanumSquare', sans-serif !important;
+	margin-top: 40px;
 	margin-left: 100px;
 	margin-bottom: 20px;
 }
@@ -125,7 +126,40 @@ button:hover{
 }
 .height{
 	border:0;
-	margin-left: 330px;
+	margin-left: 80px;
+	margin-right: 80px;
 	width: 1px;
 	height: 500px;
+	float: left;
 }
+
+/* 동아리 신청현황 */
+.my_sub{
+	padding-top: 100px;
+}
+.my_sub_txt{
+	font-family: 'NanumSquare', sans-serif !important;
+	font-size: 24px;
+    font-weight: bold;
+}
+.my_sub_info{
+	font-family: 'NanumSquare', sans-serif !important;
+	font-size: 15px;
+	
+}
+/* 동아리 신청 테이블 */
+.sub_table{
+	font-family: 'NanumSquare', sans-serif !important;
+	font-size: 15px;
+	margin-top: 60px;
+}
+table {
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+  }
+  th, td {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
