@@ -26,7 +26,7 @@
             setTimeout(showImage,1000); 
             } 
     </script>-->
-    <title>마이페이지</title>
+    <title>동아리 페이지</title>
     
 </head>
     <!--ul-->
@@ -44,7 +44,7 @@
     <!-- 프로필 -->
  
     <img src="profile.png" class="profile_img"> 
-    <h1 class="mypage_title">&nbsp; 조해정님의 Mypage</h1>
+    <h1 class="mypage_title">&nbsp; CPU 동아리</h1>
 
     <!-- 한줄긋기 -->
     <hr>
@@ -52,7 +52,7 @@
     <!-- 회원정보 -->
     <div class="part">
     <div class="part1">
-        <h2 class="info_title">회원정보</h2>
+        <h2 class="info_title">회원 정보</h2>
         <div class="member_info">
             소속 과 <br>
             <input type="text" name="major"><br>
@@ -74,50 +74,52 @@
 
     <!--내 동아리 신청 현황-->
     <div class = "my_sub">
-        <span class = "my_sub_txt">동아리 신청현황</span><br>
-        <span class = "my_sub_info">내가 신청한 동아리를 확인하고 수정해보세요 !</span>
+        <span class = "my_sub_txt">지원 현황</span><br>
+        <span class = "my_sub_info">동아리 지원 현황을 확인하세요!</span>
 
-        <!--데이터를 읽어와야하기 때문에 form태그로 작성-->
         <div class = "sub_table">
-            <form action="">
-                <table>
-                    <tr>
-                        <tr>
-                            <td style="padding-right: 150px;">
-                                <span style="font-size: 16.5px; font-weight: 600;">순번</span>
-                            </td>
-                            <td>
-                                <span style="font-size: 16.5px; font-weight: 600;">동아리명</span>
-                            </td>
-                            <td style="padding-left: 150px;">
-                                <span style="font-size: 16.5px; font-weight: 600;">신청기간</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding-right: 150px; padding-left: 60px;">
-                                <span>1</span>
-                            </td>
-                            <td>
-                                <span>App&me</span>
-                            </td>
-                            <td style="padding-left: 100px;">
-                                <span>2021.07.23 21:52:00</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding-right: 150px; padding-left: 60px;">
-                                <span>2</span>
-                            </td>
-                            <td>
-                                <span>CPU</span>
-                            </td>
-                            <td style="padding-left: 100px;">
-                                <span>2021.07.24 14:21:25</span>
-                            </td>
-                        </tr>
-                    </tr>
+            <table class="table">
+                <tr>
+                  <td>순번</td>
+                  <td>학번</td>
+                  <td>이름</td>
+                  <td>전화번호</td>
+                  <td>지원동기</td>     
+                </tr>
+
+
+              <tr>
+              <?php
+              
+              include ("./db_conn.php");
+              
+              $sql="select * from submit";
+              $result=mysqli_query($conn,$sql);
+              $num=mysqli_num_rows($result);
+              $count=1;
+              
+              for($i=0;$i<$num;$i++) {
+                  $re=mysqli_fetch_array($result);
+                  
+                  ?>
+              
+                <?php
+                  echo "<td>$count</td>";
+                  echo "<td>$re[id]</td>";
+                  echo "<td>$re[name]</td>";
+                  echo "<td>$re[tell]</td>";
+                  echo "<td>$re[motive]</td>";
+    
+                 ?>
+              </tr>
+                <?php
+                $count++;
+                }
+                ?>
+              
+              
                 </table>
-            </form>
+              </form>
         </div>
     </div>    
 </div>
