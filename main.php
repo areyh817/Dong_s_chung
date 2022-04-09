@@ -33,11 +33,11 @@
     <div class="menu">
         <a href=""><h3 id="mypage">마이페이지</h3></a>
         <h3>|</h3>
-        <a href="CA/main.html"><h3 id="lookup">동아리보기</h3></a>
+        <a href="main.html"><h3 id="lookup">동아리보기</h3></a>
         <h3>|</h3>
         <a href=""><h3 id="create">신청하기</h3></a>
         <h3>|</h3>
-        <a href="html/login.html"><h3 id="recommand">로그인</h3></a>
+        <a href="login.html"><h3 id="recommand">로그인</h3></a>
     </div>
 
     <br><br><br><br>
