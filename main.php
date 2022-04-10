@@ -93,7 +93,7 @@
               
               include ("./db_conn.php");
               
-              $sql="select * from submit";
+              $sql="select * from user";
               $result=mysqli_query($conn,$sql);
               $num=mysqli_num_rows($result);
               $count=1;
@@ -105,7 +105,7 @@
               
                 <?php
                   echo "<td>$count</td>";
-                  echo "<td>$re[id]</td>";
+                  echo "<td>$re[student_id]</td>";
                   echo "<td>$re[name]</td>";
                   echo "<td>$re[tell]</td>";
                   echo "<td>$re[motive]</td>";
