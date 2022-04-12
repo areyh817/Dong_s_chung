@@ -91,6 +91,27 @@ button{
   font-size: 1.5em;
   font-family: 'Noto Sans KR', sans-serif;
 }
+select{
+  background-color: #ffffff;
+  text-align: center;
+  box-align: center;
+  border-radius: 10px;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  font-size: 0.7em;
+	font-weight: 700;
+  color: #230A3F;
+}
+option{
+  
+	font-size: 1em;
+	font-weight: 700;
+  color: #230A3F;
+  text-align: center;
+}
+select::-ms-expand {
+  display: none;
+}
 
 #hakbun {
   float:left; width: 33%; height:50px

@@ -2,14 +2,13 @@
 <?php
 include './db_conn.php';
 
-
-$caname = $_POST['ca'];
 $name = $_POST['name'];
 $student_id = $_POST['student_id'];
 $motive = $_POST['content'];
 $phone = $_POST['phone'];
 
-$sql="insert into submit(student_id, name, tell, motive, ca)values('$student_id', '$name','$phone', '$motive', '$caname')";
+
+$sql="insert into submit(id, name, tell, motive)values('$student_id', '$name','$phone', '$motive')";
 mysqli_query($conn,$sql);
 mysqli_close($conn);
 
