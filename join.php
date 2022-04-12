@@ -2,14 +2,12 @@
 <?php
 include './db_conn.php';
 
-$name = $_POST['name'];
-$student_id = $_POST['student_id'];
-$email = $_POST['email'];
-$tell = $_POST['tell'];
+$caname = $_POST['ca'];
+$id = $_POST['id'];
 $pass = $_POST['pass'];
 
 
-$sql="insert into user(student_id, email, name, pass, tell)values('$student_id', '$email', '$pass', '$name','$tell')";
+$sql="insert into admin(id, pass, ca)values('$id', '$pass', '$caname')";
 mysqli_query($conn,$sql);
 mysqli_close($conn);
 
