@@ -1,27 +1,21 @@
 <meta charset="UTF-8">
 <?php
+session_start();
 include './db_conn.php';
 
-$id = $_POST['id'];
-$pass = $_POST['pass'];
-
-echo $id. "<br>" . $pass;
 
 if(isset($_POST['id'])&&isset($_POST['pass'])){
-    $id = $_POST['id'];
-    $upass = $_POST['pass'];
+  $uid = $_POST['id'];
+  $upw = $_POST['pass'];
 
-    echo $uemail. "<br>" . $upass;
-
-    $sql="SELECT * FROM admin where id='$id'&&pass='$upass'";
-    if($result=mysqli_fetch_array(mysqli_query($conn,$sql))){
-        echo "성공";
-        echo "사용자 이름= $id";
-        echo("<script>location.href='update_form.php?idx=<?php echo $re[0]; ?>'; alert('로그인성공 :)');</script>"); 
-    } else // echo("<script>location.href='index.html'; alert('로그인 실패 :)');</script>"); 
-    echo "사용자 이름= $id";
-    echo $id. "<br>" . $upass;
-  }
+  $sql="SELECT * FROM admin where id='$uid'&&pass='$upw'";
+  if($result=mysqli_fetch_array(mysqli_query($conn,$sql))){
+    $_SESSION['user_id'] = $uid;
+    echo "<script>alert('로그인 되었습니다.');</script>";
+    ?>
+    <meta http-equiv="refresh" content="1;url=../index.html">
+    <?php
+  } else echo "아이디 또는 비밀번호가 일치하지 않습니다.";
+}
 
 ?>
-
