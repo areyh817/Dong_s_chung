@@ -10,7 +10,7 @@
 
 
 ### 호스팅 주소
-https://areyh817.github.io/Dong_s_chung/
+http://dongschung.dothome.co.kr/
 
 
 
