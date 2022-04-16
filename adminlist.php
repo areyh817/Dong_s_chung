@@ -51,17 +51,17 @@
 </tr>
 <?php
 session_start();
-echo "session 시작부분";
 $userid = $_SESSION['user_id'];
-echo "session 값 : ".$userid;
 
 $conn = mysqli_connect('localhost','root','111111','dongschung');
 
-echo "----------------------------------------<br>여기까지
-들어오남";
-$selct_ca="SELECT ca FROM admin where id='$userid'";
-echo "관리자 권한 동아리 이름 : ".$select_query;
-$sql = "SELECT * FROM submit WHERE id={$select_ca}";
+// session에서 동아리 이름 가져오기
+$selct_ca=mysqli_query ($conn,"SELECT ca FROM admin where id='$userid'");
+$row = mysqli_fetch_assoc($selct_ca);
+$ca_name = $row['ca'];
+
+// 동아리 이름에서 submit 제출자 가져오기
+$sql = "SELECT * FROM submit WHERE ca='$ca_name'";
 $res= mysqli_query($conn, $sql);
 
 for($i = 0; $i < mysqli_num_rows($res); $i++){
