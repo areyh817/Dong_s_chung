@@ -13,9 +13,9 @@ if(isset($_POST['id'])&&isset($_POST['pass'])){
     $_SESSION['user_id'] = $uid;
     echo "<script>alert('로그인 되었습니다.');</script>";
     ?>
-    <meta http-equiv="refresh" content="1;url=../index.html">
+    <meta http-equiv="refresh" content="1;url=adminlist.php">
     <?php
-  } else echo "아이디 또는 비밀번호가 일치하지 않습니다.";
+  } else echo "<script>alert('아이디 또는 비밀번호가 일치하지 않습니다.');</script>";
 }
 
 ?>
