@@ -4,10 +4,7 @@
 
 #### Website
 
-<<<<<<< HEAD
-=======
 ### 호스팅 주소
->>>>>>> main
 http://dongschung.dothome.co.kr/
 
 ### Features
