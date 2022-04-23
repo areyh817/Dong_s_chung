@@ -42,6 +42,7 @@
 <body>
 </body>
 </html>
+<a href="index.php"><h3>동아리보기</h3></a>
 <table>
 <tr>
     <td style="font-weight:bold; font-size: 16px">이름</td>

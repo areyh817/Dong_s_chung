@@ -34,12 +34,12 @@
 
         <?php
        if(isset($_POST['id'])&&isset($_POST['pass'])){
-        echo  " <a href="login.html"><h3 id="create">관리자 로그인</h3></a>";
+        echo  "<a href='login.html'><h3 id='create'>관리자 로그인</h3></a>";
          }
      else{
-        echo "<a href="login.html"><h3 id="create">지원 현황 확인</h3></a>" ;
+        echo " <a href='adminlist.php'><h3>지원 현황 확인</h3></a>" ;
          }
-        >
+        ?>
        
     </div>
 </body>
