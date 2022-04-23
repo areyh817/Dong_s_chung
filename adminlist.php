@@ -53,7 +53,7 @@
 session_start();
 $userid = $_SESSION['user_id'];
 
-$conn = mysqli_connect('localhost','root','111111','dongschung');
+$conn=mysqli_connect('localhost','dongschung','dong2022!','dongschung');
 
 // session에서 동아리 이름 가져오기
 $selct_ca=mysqli_query ($conn,"SELECT ca FROM admin where id='$userid'");
