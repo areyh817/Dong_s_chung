@@ -30,7 +30,17 @@
         <h3>|</h3>
         <a href=""><h3 id="lookup">신청하기</h3></a>
         <h3>|</h3>
-        <a href="login.html"><h3 id="create">관리자 로그인</h3></a>
+
+
+        <?php
+       if(isset($_POST['id'])&&isset($_POST['pass'])){
+        echo  " <a href="login.html"><h3 id="create">관리자 로그인</h3></a>";
+         }
+     else{
+        echo "<a href="login.html"><h3 id="create">지원 현황 확인</h3></a>" ;
+         }
+        >
+       
     </div>
 </body>
 </html>
