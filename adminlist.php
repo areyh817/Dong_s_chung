@@ -42,7 +42,8 @@
 <body>
 </body>
 </html>
-<a href="index.php"><h3>동아리보기</h3></a>
+<a href="index.php"><h3>홈으로</h3></a>
+<a href="logout.php"><h3>로그아웃</h3></a>
 <table>
 <tr>
     <td style="font-weight:bold; font-size: 16px">이름</td>
